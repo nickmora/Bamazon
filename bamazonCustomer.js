@@ -50,7 +50,13 @@ function begin() {
             },{
                 name: "quantity",
                 type: "input",
-                message: "How many would you like to purchase?"
+                message: "How many would you like to purchase?",
+                validate: function(value) {
+                    if (isNaN(value) === false&&parseInt(value)>0) {
+                        return true;
+                    }
+                    return false;
+                }
             }
         ]).then(ans=>{
             checkStock(ans);
