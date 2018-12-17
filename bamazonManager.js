@@ -163,7 +163,7 @@ function more(){
         {
             name: "confirm",
             type: "confirm",
-            message:"Would you like to purchase something else?"
+            message:"Would you like to execute another action?"
         }
     ]).then(ans=>{
         if(ans.confirm){

@@ -89,6 +89,7 @@ function checkStock(obj){
             var quant = resp[0].stock_quantity;
             var cost = parseFloat(resp[0].price)*parseFloat(obj.quantity);
             purchase(obj, quant, cost);
+
         }
         else{
             console.log(`I'm sorry, you're trying to purchase more ${obj.welcome}s than we have`);
@@ -113,4 +114,14 @@ function more(){
             connection.end();
         }
     })
+}
+
+function trackSales(cost, name){
+    connection.query("UPDATE product_sales SET ? WHERE ?",[
+        {
+            product_sales: parseFloat(cost)
+        },{
+            product_name: name,
+        }
+    ])
 }
