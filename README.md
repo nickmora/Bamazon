@@ -28,6 +28,10 @@ Bamazon is a multi-facted command line intercafe app that allows the user to tak
 
 Check out the enclosed images file for some screenshots of bamazonCustomer in action!
 
+![Image1](./images/customer1.png)
+![Image2](./images/customer2.png)
+![Image3](./images/customer3.png)
+
 ##### Manager Mode
 
 * Navigate to the Bamazon folder in your terminal and executre the following command `node bamazonManager.js`.
@@ -56,6 +60,11 @@ Check out the enclosed images file for some screenshots of bamazonCustomer in ac
 * After choosing your new product, you can check the updated products table by answering `yes` when prompted to execute another action, then `View Products for Sale`.
 
 Check out the enclosed images file for some screenshots of bamazonManager in action!
+
+![Image4](./images/manager1.png)
+![Image5](./images/manager2.png)
+![Image6](./images/manager3.png)
+![Image7](./images/manager4.png)
 
 ##### Supervisor Mode
 
